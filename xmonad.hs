@@ -190,6 +190,13 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((0, 0x1008FF2C),
      spawn "eject -T")
 
+  -- Adjust brightness
+  , ((noModMask, xK_F6),
+     spawn "xbacklight -dec 10")
+
+  , ((noModMask, xK_F7),
+     spawn "xbacklight -inc 10")
+
   --------------------------------------------------------------------
   -- "Standard" xmonad key bindings
   --
